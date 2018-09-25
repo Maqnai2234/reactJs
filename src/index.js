@@ -1,9 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
-import Categories from './categories/components/categories';
-import data from './api.json'
+import Home from './pages/containers/home.js';
 
 const app = document.getElementById("root");
 
-render(<Categories data={data} />,app)
+render(<Home />,app)
 

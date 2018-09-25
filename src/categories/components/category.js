@@ -1,17 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Playlist from '../../playlist/components/playlist';
 
-class Category extends Component {
-  render(){
-    const category = this.props.category
-    const playlists = this.props.category.playlist
+function Category(props) {
+    const category = props.category
     return(
       <div className="Category">
-        <h3>{category.title}</h3>
-        <Playlist playlist={playlists}/>
+        <p>{category.description}</p>
+        <h2>{category.title}</h2>
+        <Playlist playlist={category.playlist}/>
       </div>
     )
-  }
 }
 
 export default Category;

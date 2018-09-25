@@ -11,14 +11,14 @@ class Media extends PureComponent {
   //     author: props.author
   //   }
   // }
-  handleClick = (event) => {
-    this.setState({
-      author: "Jean Paul"
-    })
-  }
+  // handleClick = (event) => {
+  //   this.setState({
+  //     author: "Jean Paul"
+  //   })
+  // }
   render (){
     return (     
-      <div className="Media" onClick={this.handleClick}>
+      <div className="Media" onClick={this.props.handleClick}>
         <div className="Media-cover">
           <img
             className="Media-image" 
